@@ -153,3 +153,21 @@ langButtons.forEach(button => {
   });
 
 });
+
+/* ========================= */
+/* MOBILE MENU */
+/* ========================= */
+
+const mobileBtn = document.querySelector('.mobile-menu-btn');
+
+const subNavbar = document.querySelector('.sub-navbar');
+
+if(mobileBtn){
+
+  mobileBtn.addEventListener('click',()=>{
+
+    subNavbar.classList.toggle('active');
+
+  });
+
+}

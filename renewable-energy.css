@@ -36,7 +36,7 @@ section{
   z-index:999;
   background:rgba(8,19,31,0.58);
   backdrop-filter:blur(16px);
-  border-bottom:1px solid rgba(255,255,255,0.08);
+border-bottom:1px solid rgba(255,255,255,0.04);
 }
 
 .logo-area{
@@ -410,6 +410,13 @@ max-width:900px;
 /* ========================= */
 /* MOBILE */
 /* ========================= */
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+.mobile-menu-btn{
+  display:none;
+}
 
 @media(max-width:991px){
 
@@ -455,45 +462,193 @@ max-width:900px;
 @media(max-width:768px){
 
   .container{
-    width:94%;
+    width:88%;
+  }
+
+  /* ========================= */
+  /* NAVBAR */
+  /* ========================= */
+
+  .navbar{
+    height:74px;
   }
 
   .nav-wrapper{
-    padding:12px 0;
+    height:74px;
+    min-height:74px;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
   }
 
+  .logo-area{
+    gap:10px;
+    display:flex;
+    align-items:center;
+    height:100%;
+    transform:none;
+  }
 
+  .logo-area img{
+    width:40px;
+    height:40px;
+    object-fit:contain;
+  }
+
+  .logo-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+
+  .logo-text h1{
+    font-size:15px;
+    line-height:1;
+    margin:0;
+  }
+
+  .logo-text p{
+    font-size:7px;
+    letter-spacing:2.8px;
+    margin-top:4px;
+    line-height:1;
+  }
+
+  .right-navbar{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    height:100%;
+  }
+
+.language-switcher{
+    font-size:15px;
+    gap:10px;
+    line-height:1;
+    font-weight:700;
+}
+
+.mobile-menu-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:30px;
+    height:30px;
+    font-size:28px;
+    line-height:1;
+    color:white;
+    cursor:pointer;
+    margin-top:-2px;
+    
+  }
+
+  /* ========================= */
+  /* MOBILE MENU */
+  /* ========================= */
+
+  .sub-navbar{
+
+    position:absolute;
+
+    top:74px;
+    right:20px;
+
+    width:220px;
+
+    padding:14px;
+
+    border-radius:20px;
+
+    background:rgba(8,19,31,0.97);
+
+    border:1px solid rgba(255,255,255,0.06);
+
+    backdrop-filter:blur(16px);
+
+    display:none;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:4px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,0.45);
+  }
+
+  .sub-navbar.active{
+    display:flex;
+  }
 
   .sub-navbar a{
+    width:100%;
+    padding:14px 16px;
+    border-radius:12px;
     font-size:14px;
   }
 
+  /* ========================= */
+  /* HERO */
+  /* ========================= */
+
+  .renewable-hero{
+    min-height:92vh;
+    padding-top:48px;
+  }
+
+  .hero-content{
+    padding-top:20px;
+  }
+
+  .hero-tag{
+    font-size:10px;
+    padding:10px 18px;
+    margin-bottom:20px;
+  }
+
   .hero-title{
-    font-size:40px;
+    font-size:42px;
+    line-height:0.95;
     letter-spacing:-2px;
+    margin-bottom:20px;
   }
 
   .hero-desc{
-    font-size:15px;
-    line-height:1.8;
+    font-size:14px;
+    line-height:1.7;
+    max-width:100%;
+  }
+
+  /* ========================= */
+  /* SECTION */
+  /* ========================= */
+
+  section{
+    padding:70px 0;
+  }
+
+  .section-title{
+    margin-bottom:40px;
   }
 
   .section-heading{
-    font-size:32px;
+    font-size:30px;
+    line-height:1.1;
   }
+
+  /* ========================= */
+  /* PRODUCTS */
+  /* ========================= */
 
   .products-grid{
-    grid-template-columns:1fr;
-    gap:20px;
-  }
-
-  .gallery-grid{
     grid-template-columns:1fr;
     gap:18px;
   }
 
   .renew-card{
-    min-height:420px;
+    min-height:400px;
   }
 
   .renew-content{
@@ -505,22 +660,50 @@ max-width:900px;
   }
 
   .renew-content p{
-    font-size:15px;
+    font-size:14px;
+    line-height:1.7;
+  }
+
+  /* ========================= */
+  /* VIDEO */
+  /* ========================= */
+
+  .video-grid{
+    grid-template-columns:1fr;
   }
 
   .video-card iframe{
-    height:240px;
+    height:220px;
   }
 
+  /* ========================= */
+  /* GALLERY */
+  /* ========================= */
+
+  .gallery-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .gallery-item{
+    height:320px;
+  }
+
+  /* ========================= */
+  /* CTA */
+  /* ========================= */
+
   .partnership-box{
-    padding:34px 22px;
+    padding:34px 24px;
   }
 
   .partnership-box h2{
-    font-size:30px;
+    font-size:28px;
   }
 
   .partnership-box p{
-    font-size:15px;
+    font-size:14px;
+    line-height:1.8;
   }
+
 }
