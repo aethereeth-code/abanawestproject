@@ -321,16 +321,55 @@ max-width:900px;
 }
 
 .video-card{
+  position:relative;
+
   overflow:hidden;
+
   border-radius:24px;
-  border:1px solid rgba(255,255,255,0.06);
+
   background:#101b28;
 }
 
 .video-card iframe{
   width:100%;
+
   height:360px;
+
   border:none;
+
+  display:block;
+
+  position:relative;
+
+  z-index:2;
+}
+
+.video-card video{
+  width:100%;
+
+  height:420px;
+
+  border:none;
+
+  display:block;
+
+  object-fit:cover;
+
+  position:relative;
+
+  z-index:1;
+}
+
+/* VIDEO LANDSCAPE */
+
+.video-wide{
+  grid-column:1 / span 2;
+
+  padding:0;
+}
+
+.video-wide video{
+  border-radius:24px;
 }
 
 /* ========================= */
@@ -406,10 +445,16 @@ max-width:900px;
 .partnership-box a:hover{
   transform:translateY(-2px);
 }
+.footer-copy{
+  margin-top:40px;
 
-/* ========================= */
-/* MOBILE */
-/* ========================= */
+  font-size:14px;
+
+  color:rgba(255,255,255,0.45);
+
+  text-align:center;
+}
+
 /* ========================= */
 /* MOBILE */
 /* ========================= */
@@ -672,10 +717,21 @@ max-width:900px;
     grid-template-columns:1fr;
   }
 
-  .video-card iframe{
-    height:220px;
-  }
+ .video-card iframe{
+  width:100%;
+  height:360px;
+  border:none;
+  display:block;
+}
+.video-card video{
+  height:240px;
+}
 
+.video-wide{
+  grid-column:auto;
+
+  padding:0;
+}
   /* ========================= */
   /* GALLERY */
   /* ========================= */

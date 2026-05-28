@@ -145,12 +145,6 @@
   document.querySelector(".products-heading").innerHTML =
   "Portofolio Produk Energi Global";
 
-  document.querySelector(".product-title-1").innerHTML =
-  "  Aluminium Rod";
-
-  document.querySelector(".product-desc-1").innerHTML =
-  "Solusi konduktor aluminium ringan untuk sistem tenaga industri dan kebutuhan manufaktur kabel.";
-
   document.querySelector(".product-title-2").innerHTML =
   "Minyak Mentah";
 
@@ -407,12 +401,6 @@ document.querySelector(".footer-credit").innerHTML =
 
   document.querySelector(".products-heading").innerHTML =
   "Global Energy Product Portfolio";
-
-  document.querySelector(".product-title-1").innerHTML =
-  "Aluminium Rod";
-
-  document.querySelector(".product-desc-1").innerHTML =
-  " Lightweight aluminium conductor solution for industrial power systems and cable manufacturing applications..";
 
   document.querySelector(".product-title-2").innerHTML =
   "Crude Oil";

@@ -635,16 +635,16 @@ z-index:2;
     background:#0d1b2a;
   }
 
-  .products-grid{
+.products-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(3,1fr);
 
     gap:28px;
 
     margin-top:70px;
-  }
+}
 
   .product-card{
 
