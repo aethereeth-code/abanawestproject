@@ -283,20 +283,17 @@ document.querySelectorAll(".footer-grid ul li a")[3].innerHTML =
 document.querySelectorAll(".footer-grid ul li a")[4].innerHTML =
 "Kontak";
 
-document.querySelectorAll(".footer-grid ul")[1].children[0].innerHTML =
-"Aluminium Rod";
-
-document.querySelectorAll(".footer-grid ul")[1].children[1].innerHTML =
-"Crude Oil";
-
-document.querySelectorAll(".footer-grid ul")[1].children[2].innerHTML =
-"Marine Fuel Oil";
-
-document.querySelectorAll(".footer-grid ul")[1].children[3].innerHTML =
-"Industrial Fuel";
-
 document.querySelector(".footer-credit").innerHTML =
 "Dibuat oleh aethere";
+
+document.querySelectorAll('.footer-product')[0].innerHTML =
+'Minyak Mentah';
+
+document.querySelectorAll('.footer-product')[1].innerHTML =
+'Bahan Bakar Kapal';
+
+document.querySelectorAll('.footer-product')[2].innerHTML =
+'Bahan bakar Industri';
 }
 
 
@@ -542,20 +539,17 @@ document.querySelectorAll(".footer-grid ul li a")[3].innerHTML =
 document.querySelectorAll(".footer-grid ul li a")[4].innerHTML =
 "Contact";
 
-document.querySelectorAll(".footer-grid ul")[1].children[0].innerHTML =
-"Aluminium Rod";
-
-document.querySelectorAll(".footer-grid ul")[1].children[1].innerHTML =
-"Crude Oil";
-
-document.querySelectorAll(".footer-grid ul")[1].children[2].innerHTML =
-"Marine Fuel Oil";
-
-document.querySelectorAll(".footer-grid ul")[1].children[3].innerHTML =
-"Industrial Fuel";
-
 document.querySelector(".footer-credit").innerHTML =
 "Crafted by aethere";
+
+document.querySelectorAll('.footer-product')[0].innerHTML =
+'Crude Oil';
+
+document.querySelectorAll('.footer-product')[1].innerHTML =
+'Marine Fuel Oil';
+
+document.querySelectorAll('.footer-product')[2].innerHTML =
+'Industrial Fuel';
 }
       
     
