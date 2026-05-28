@@ -78,6 +78,11 @@ langButtons.forEach(button => {
       document.querySelector('.partnership-box p').innerHTML =
       'Berkolaborasi menuju solusi energi terbarukan yang inovatif dan pertumbuhan industri yang berkelanjutan.';
 
+      document.querySelectorAll('.section-heading')[3].innerHTML =
+'Bidang Bisnis Lainnya';
+
+document.querySelector('.footer-copy').innerHTML =
+'© 2026 Abanawest Nusantara Indonesia. Hak cipta dilindungi.';
     }
 
 
@@ -148,6 +153,11 @@ langButtons.forEach(button => {
       document.querySelector('.partnership-box p').innerHTML =
       'Collaborating toward innovative renewable energy solutions and sustainable industrial growth.';
 
+      document.querySelectorAll('.section-heading')[3].innerHTML =
+'Others Business Field';
+
+document.querySelector('.footer-copy').innerHTML =
+'© 2026 Abanawest Nusantara Indonesia. All rights reserved.';
     }
 
   });
